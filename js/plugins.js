@@ -18,9 +18,9 @@ $(document).ready(function () {
             $("#" + elem).addClass("page-active").siblings().removeClass('page-active');
             if (elem === "skills" && once === false) {
                 if ($(document).width() >= 992) {
-                    setTimeout(function(){draw('progress1', '#08AEAC', 92, 'HTML')}, 500);
-                    setTimeout(function(){draw('progress2', '#021533', 90, 'CSS')}, 500);
-                    setTimeout(function(){draw('progress3', '#D9212A', 70, 'JS')}, 500);
+                    setTimeout(function(){draw('progress1', '#08AEAC', 92, 'HTML5')}, 500);
+                    setTimeout(function(){draw('progress2', '#021533', 90, 'CSS3')}, 500);
+                    setTimeout(function(){draw('progress3', '#D9212A', 70, 'JQuery')}, 500);
                     once = true;
                 }
                 
@@ -34,10 +34,9 @@ $(document).ready(function () {
             var elemTop = $("#skills").offset().top;
 
             if ((elemTop <= docViewTop) && once === false) {
-                console.log("yes");
-                draw('progress1', '#08AEAC', 92, 'HTML');
-                draw('progress2', '#021533', 90, 'CSS');
-                draw('progress3', '#D9212A', 70, 'JS');
+                draw('progress1', '#08AEAC', 92, 'HTML5');
+                draw('progress2', '#021533', 90, 'CSS3');
+                draw('progress3', '#D9212A', 70, 'JQuery');
                 once = true;
             }
         }
@@ -47,7 +46,7 @@ $(document).ready(function () {
     $('.page-inner').perfectScrollbar();
 
     $('.carousel').carousel({
-        interval: 2000
+        interval: 1000
     });
 });
 
@@ -86,11 +85,3 @@ function draw(id, color, prec, text) {
     }
     sim = setInterval(progressSim, 30);
 }
-
-//draw('comunication', '#08AEAC', 92, 'comunication');
-//draw('leadership', '#021533', 90, 'leadership');
-//draw('confidence', '#D9212A', 70, 'confidence');
- 
-
-//draw('progress4', '#FFD600', 55, 'JQuery');
-//draw('progress5', '#C51162', 60, 'Bootstrap');

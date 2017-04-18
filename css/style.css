@@ -101,6 +101,11 @@ body {
     text-align: center;
     margin: 0 auto 20px;
     display: block;
+    overflow: hidden;
+}
+.home .profile-pic .pic img{
+    width: 100%;
+    height: 100%;
 }
 .home .profile-desc{
     text-align: center;
