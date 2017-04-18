@@ -84,7 +84,7 @@ function draw(id, color, prec, text) {
         }
         al++;
     }
-    sim = setInterval(progressSim, 50);
+    sim = setInterval(progressSim, 30);
 }
 
 //draw('comunication', '#08AEAC', 92, 'comunication');
