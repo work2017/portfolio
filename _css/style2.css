@@ -1,0 +1,171 @@
+/*===================================
+            General Rules
+===================================*/
+
+/*===================================
+           Start Main Menu
+===================================*/
+body {
+  background: url('../_images/') no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+.container{
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.menu{
+    width: 15%;
+    margin-top: 30px;
+    position: absolute;
+    left: 15%;
+    display: none;
+    background-color: #7E4D71;
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    transition: all 0.3s ease-in-out;
+}
+.menu ul{
+    padding: 30px 10px 80px;
+    margin: 0;
+}
+.menu ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.menu ul li a{
+    position: relative;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #8CBEA1;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+.menu ul li a:hover{
+    background-color: #fff;
+    color: #8CBEA1;
+}
+.sec{
+    width: 40%;
+    background: #514259; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #514259 0%, #a85687 100%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #514259 0%,#a85687 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #514259 0%,#a85687 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#514259', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    position: absolute;
+    left: 31%;
+    margin-top: 30px;
+    padding: 30px;
+    overflow-y: auto;
+    transition: all 0.3s ease-in-out;
+}
+.page{
+    opacity: 0;
+}
+.home{
+    z-index: 10;
+}
+.home .profile-pic .pic{
+    width: 200px;
+    height: 200px;
+    background-color:#eee;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto 20px;
+    display: block;
+}
+.home .profile-desc{
+    text-align: center;
+}
+.home .profile-desc h1{
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 36px;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.home .profile-desc h1 span{
+    color: #8CBEA1;
+}
+.home .profile-desc h2{
+    text-align: center;
+    color: #CDE768;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+hr{
+    margin: 10px auto;
+    width: 80%;
+}
+.home .profile-desc p{
+    padding: 10px;
+    color: #fff;
+    margin: 0 20px 10px;
+}
+.home .profile-desc p.feature{
+    background-color: #8CBEA1;
+    padding:10px;
+    border-radius: 5px;
+}
+.home .s-links{
+    text-align: center;
+    padding: 10px;
+}
+.home .s-links a{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    transition: all 0.3s ease-in-out;
+} 
+/*-----------------*/
+.menu-active{
+    left:0%;
+}
+.home-active{
+    left: 16%;
+}
+.page-active{
+    left: 57%;
+    opacity: 1;
+}
+
+@media(min-width:992px){
+    .container{
+        min-height: 650px;
+    }
+    .sec{
+        height: 570px;
+    }
+    .menu{
+        display: block;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
