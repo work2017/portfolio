@@ -18,9 +18,9 @@ $(document).ready(function () {
             $("#" + elem).addClass("page-active").siblings().removeClass('page-active');
             if (elem === "skills" && once === false) {
                 if ($(document).width() >= 992) {
-                    setTimeout(function(){draw('progress1', '#08AEAC', 92, 'HTML5')}, 500);
-                    setTimeout(function(){draw('progress2', '#021533', 90, 'CSS3')}, 500);
-                    setTimeout(function(){draw('progress3', '#D9212A', 70, 'JQuery')}, 500);
+                    setTimeout(function() {draw('progress1', '#08AEAC', 92, 'HTML5')}, 500);
+                    setTimeout(function() {draw('progress2', '#021533', 90, 'CSS3')}, 500);
+                    setTimeout(function() {draw('progress3', '#D9212A', 70, 'JQuery')}, 500);
                     once = true;
                 }
                 
